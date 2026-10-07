@@ -3,3 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: rgba(0, 0, 0, 0.823);
+}
+
+.container {
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  margin: 0 20vw;
+}
+
+.sidebar {
+  background-color: red;
+  /* width: 33%; */
+  flex: 1;
+}
+
+main {
+  background-color: green;
+  /* width: 67%; */
+  flex: 2;
+}
