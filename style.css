@@ -121,6 +121,7 @@ label {
 .input-element {
   display: flex;
   flex-direction: column;
+  gap: 1px;
 }
 
 button {
@@ -143,4 +144,21 @@ button {
   color: #596D48;
   font-weight: bold;
   text-decoration: none;
+}
+
+input {
+  border: 1px solid #E5E7EB;
+  border-radius: 3px;
+  font-size: 10px;
+  padding: 3px;
+}
+
+input:focus {
+  border: 1px solid blue;
+  outline: none;
+  box-shadow: 1px 1px 5px -1px grey;
+}
+
+input[type="password"]:user-invalid {
+  border: 1px solid red;
 }

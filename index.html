@@ -39,24 +39,24 @@
           <p class="bolded-paras">You <em>know</em> you want to.</p>
         </div>
 
-        <form action="#">
-          <p class="bolded-paras" id="form-intro" >Lets do this!</p>
+        <form id="aravsForm" action="#" method="post">
+          <p class="bolded-paras" id="form-intro">Lets do this!</p>
 
           <div class="row">
             <div class="input-element">
               <label for="fname">FIRST NAME</label>
-              <input type="text" name="first-name" id="fname" />
+              <input type="text" name="first-name" id="fname" required/>
             </div>
             <div class="input-element">
               <label for="lname">LAST NAME</label>
-              <input type="text" name="last-name" id="lname" />
+              <input type="text" name="last-name" id="lname" required/>
             </div>
           </div>
 
           <div class="row">
             <div class="input-element">
               <label for="mail">EMAIL</label>
-              <input type="email" name="email" id="mail" />
+              <input type="email" name="email" id="mail" required/>
             </div>
             <div class="input-element">
               <label for="phone">PHONE NUMBER</label>
@@ -66,17 +66,18 @@
 
           <div class="row">
             <div class="input-element">
-              <label for="p1">PASSWORD</label>
-              <input type="password" name="pass1" id="p1" />
+              <label for="p1">PASSWORD (min 8 characters)</label>
+              <input type="password" name="pass1" id="p1" minlength="8" required/>
             </div>
             <div class="input-element">
               <label for="p2">CONFIRM PASSWORD</label>
-              <input type="password" name="pass2" id="p2" />
+              <input type="password" name="pass2" id="p2" minlength="8" required/>
             </div>
           </div>
         </form>
 
-        <button>Create Account</button>
+        <button form="aravsForm">Create Account</button> <!-- Form was not submitting because it was outside the form tag and hence had to link it separately -->
+        <!-- <input type="button" class="button" value="Create Account"> -->
 
         <p class="log-in">Already have an account? <a href="#">Log in</a></p>
       </main>
