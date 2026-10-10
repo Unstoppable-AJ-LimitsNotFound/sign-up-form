@@ -9,52 +9,76 @@
   <body>
     <div class="container">
       <section class="sidebar">
-
         <div class="behind-logo">
           <div class="logo"></div>
           <div class="logo-text">Odin</div>
         </div>
 
-        <span id="credit">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+        <span id="credit"
+          >Photo by
+          <a
+            href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Halie West</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          ></span
+        >
       </section>
 
       <main>
-        <p>
-          This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>
-          Sign up <em>now</em> to get started. 
-        </p>
+        <div class="intro-paras">
+          <p class="bolded-paras">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. <br />
+            Sign up <em>now</em> to get started.
+          </p>
 
-        <p>
-          You <em>know</em> you want to.
-        </p>
+          <p class="bolded-paras">You <em>know</em> you want to.</p>
+        </div>
 
         <form action="#">
-          <p>Lets do this!</p>
+          <p class="bolded-paras" id="form-intro" >Lets do this!</p>
 
-          <label for="fname">FIRST NAME</label>
-          <input type="text" name="first-name" id="fname">
-          
-          <label for="lname">LAST NAME</label>
-          <input type="text" name="last-name" id="lname">
+          <div class="row">
+            <div class="input-element">
+              <label for="fname">FIRST NAME</label>
+              <input type="text" name="first-name" id="fname" />
+            </div>
+            <div class="input-element">
+              <label for="lname">LAST NAME</label>
+              <input type="text" name="last-name" id="lname" />
+            </div>
+          </div>
 
-          <label for="mail">EMAIL</label>
-          <input type="email" name="email" id="mail">
+          <div class="row">
+            <div class="input-element">
+              <label for="mail">EMAIL</label>
+              <input type="email" name="email" id="mail" />
+            </div>
+            <div class="input-element">
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" name="phone-number" id="phone" />
+            </div>
+          </div>
 
-          <label for="phone">PHONE NUMBER</label>
-          <input type="tel" name="phone-number" id="phone">
-
-          <label for="p1">PASSWORD</label>
-          <input type="password" name="pass1" id="p1">
-
-          <label for="p2">CONFIRM PASSWORD</label>
-          <input type="password" name="pass2" id="p2">
+          <div class="row">
+            <div class="input-element">
+              <label for="p1">PASSWORD</label>
+              <input type="password" name="pass1" id="p1" />
+            </div>
+            <div class="input-element">
+              <label for="p2">CONFIRM PASSWORD</label>
+              <input type="password" name="pass2" id="p2" />
+            </div>
+          </div>
         </form>
 
         <button>Create Account</button>
 
-        <p>
-          Already have an account? <a href="#">Log in</a>
-        </p>
+        <p class="log-in">Already have an account? <a href="#">Log in</a></p>
       </main>
     </div>
   </body>
